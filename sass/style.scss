@@ -1,0 +1,78 @@
+$sm: 10px;
+$md: 20px;
+
+.bg-grey {
+	background-color: #808080;
+}
+
+.bd-d {
+	border: 1px solid;
+}
+
+.p-sm {
+	padding: $sm;
+}
+
+.m-sm {
+	margin: $sm;
+}
+
+.m-t-sm {
+	margin-top: $sm;
+}
+
+.m-t-md {
+	margin-top: $md;
+}
+
+.v-center {
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+}
+
+@mixin respond($text, $h1, $h2, $h3, $h4) {
+	.text-reponsive {
+		font-size: $text;
+	}
+
+	h1.text-reponsive {
+		font-size: $h1;
+		font-weight: bold;
+	}
+
+	h2.text-reponsive {
+		font-size: $h2;
+		font-weight: bold;
+	}
+
+	h3.text-reponsive {
+		font-size: $h3;
+		font-weight: bold;
+	}
+
+	h4.text-reponsive {
+		font-size: $h4;
+		font-weight: bold;
+	}
+}
+
+@media (max-width: 479px) {
+	@include respond(12px, 24px, 21px, 18px, 15px);
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	@include respond(14px, 29px, 25px, 21px, 17px);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	@include respond(15px, 33px, 28px, 23px, 18px);
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	@include respond(16px, 35px, 30px, 25px, 20px);
+}
+
+@media (min-width: 1200px) {
+	@include respond(17px, 37px, 32px, 27px, 22px);
+}

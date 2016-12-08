@@ -1,0 +1,19 @@
+{
+	"name": "app",
+	"version": "1.0.0",
+	"scripts": {},
+	"license": "AGPL-3.0",
+	"repository": {},
+	"description": "camera",
+	"dependencies": {
+		"react": "",
+		"react-dom": ""
+	},
+	"devDependencies": {
+		"webpack": "",
+		"babel-core": "",
+		"babel-loader": "",
+		"babel-preset-react": "",
+		"babel-preset-es2015": ""
+	}
+}
